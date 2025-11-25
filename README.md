@@ -1,6 +1,10 @@
 
 ## 🚀 Quick Start — Current State (Jazzy)
 
+## Dependnecies
+* ros jassy
+* sudo apt install ros-jazzy-joint-trajectory-controller
+
 **1) Build once**
 ```bash
 cd ~/Downloads/robotics_final
