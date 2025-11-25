@@ -3,7 +3,14 @@
 
 ## Dependnecies
 * ros jassy
-* sudo apt install ros-jazzy-joint-trajectory-controller
+```bash
+cd robotic-arm-new
+sudo apt install python3-rosdep
+sudo rosdep update
+sudo rosdep init
+rosdep install --from-paths src --ignore-src -r -y
+sudo apt install ros-jazzy-joint-trajectory-controller
+```
 
 **1) Build once**
 ```bash
