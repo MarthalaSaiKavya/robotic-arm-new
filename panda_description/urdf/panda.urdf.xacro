@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<robot name="panda" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- Simulation variant selector -->
+  <xacro:arg name="is_ignition" default="False"/>
+
+  <xacro:include filename="$(find panda_description)/urdf/materials.xacro" />
+  <xacro:include filename="$(find panda_description)/urdf/arm.xacro" />
+  <xacro:include filename="$(find panda_description)/urdf/gazebo.xacro" />
+  <xacro:include filename="$(find panda_description)/urdf/ros2control.xacro" />
+
+  <!-- Inject ros2_control configuration -->
+  <xacro:panda_ros2_control />
+    
+</robot>
